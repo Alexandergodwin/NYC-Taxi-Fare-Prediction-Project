@@ -74,9 +74,9 @@ It would probably be very helpful to have past tipping behavior for each custome
 - When the mean_distance and mean_duration columns were computed, the means were calculated from the entire dataset. These same columns were then used to train a model that was used to predict on a test set. A test set is supposed to represent entirely new data that the model has not seen before, but in this case, some of its predictor variables were derived using data that was in the test set. This is known as data leakage. Data leakage is when information from your training data contaminates the test data. If your model has unexpectedly high scores, there is a good chance that there was some data leakage. To avoid data leakage in this modeling process, it would be best to compute the means using only the training set and then copy those into the test set, thus preventing values from the test set from being included in the computation of the means. This would have created some problems because it's very likely that some combinations of pickup-dropoff locations would only appear in the test data (not the train data). This means that there would be NaNs in the test data, and further steps would be required to address this. In this case, the data leakage improved the R2 score by ~0.03.
 
 ### Connect with Me
-- [Linkedin](www.linkedin.com/in/alexandergodwindre)
-- [Twitter](www.X.com/afambualexander)
-- [Gmail](www.alexandergodwindre@gmail.com)
+- [Linkedin](https://www.linkedin.com/in/alexandergodwindre)
+- [Twitter](https://www.X.com/afambualexander)
+- [Gmail](alexandergodwindre@gmail.com)
 
 
 
